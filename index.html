@@ -16,19 +16,13 @@
     </header>
 
     <main class="main">
-      <header>
-        <h1>
-          Adrian - Strona domowa
-        </h1>
+      <header class="page-header__heading page-header__heading--js">
+        <h1>Adrian - Strona domowa</h1>
       </header>
 
       <section class="about" id="about">
         <h2 class="about__heading">Kim jest ten typ?</h2>
-        <img
-          class="about__picture"
-          src="kot.jpg"
-          alt="kot"
-        />
+        <img class="about__picture" src="kot.jpg" alt="kot" />
         <p class="about__description">
           Hej! Na co dzień uczę wspaniałych ludzi <em>tajnej sztuki</em>
           <i>frontendu</i> i pracuję w firmie o ciężko zapisywalnej nazwie:
@@ -46,13 +40,15 @@
         <div class="grid">
           <article class="week-summary">
             <h3 class="week-summary__title week-summary__title--js">
-              <span class="week-summary__title-content">Odrabianie pracy domowej</span>
+              <span class="week-summary__title-content"
+                >Odrabianie pracy domowej</span
+              >
             </h3>
             <p class="week-summary__description">Poszło mi całkiem spoko :)</p>
             <p
               class="week-summary__description week-summary__description--js"
             ></p>
-          </article>          
+          </article>
 
           <article class="week-summary">
             <h3 class="week-summary__title">
@@ -68,10 +64,13 @@
           </article>
         </div>
       </section>
+      <div id="empty-element">
+
+      </div>
     </main>
     <footer class="footer">
-      Strona domowa Adrian, wszystkie treści są efektem tworzenia
-      szkolenia WTF: Co ten frontend.
+      Strona domowa Adrian, wszystkie treści są efektem tworzenia szkolenia WTF:
+      Co ten frontend.
       <a class="footer__link" href="#top">Wróć na górę strony</a>
     </footer>
     <script defer src="main.js"></script>
