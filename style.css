@@ -16,12 +16,22 @@ h1 {
 }
 
 h2 {
-  color: #1460AA;
+  color: #1460aa;
   background-color: white;
 }
 
 section {
   background-color: #cdc1f8;
+}
+
+.header {
+  position: sticky;
+  top:0;
+}
+
+.main {
+  max-width: 768px;
+  margin: 0 auto;
 }
 
 .about {
@@ -40,11 +50,13 @@ section {
   display: block;
   max-width: 100%;
 }
+
 .about__heading {
   color: #044550;
 }
 
-.about__description {}
+.about__description {
+}
 
 .navigation {
   padding: 16px;
@@ -58,6 +70,7 @@ section {
 .section {
   background: #dcdcdc;
   margin-bottom: 16px;
+  padding: 16px;
 }
 
 .section__header {
@@ -66,7 +79,6 @@ section {
 
 .section__header--special {
   color: tomato;
-  margin-left: 64px;
 }
 
 .notes {
@@ -84,9 +96,38 @@ section {
 }
 
 .footer__link {
-  color: #1460aa;
+  color: white;
+  position: fixed;
+  bottom: 16px;
+  right: 16;
+  padding: 8px 12px;
+  background: black;
+  border-radius: 8px;
+  display: block;
 }
 
 .list {
   list-style: square;
+}
+
+.article {
+  margin-bottom: 32px;
+}
+
+.article__header{
+  color: #1460aa;
+}
+
+.article p{
+  background-color: #1460aa;
+  columns: #fff;
+  pad: 16px;
+}
+
+.footer {
+  padding: 16px;
+}
+
+.footer__content {
+  color: #949499;
 }
