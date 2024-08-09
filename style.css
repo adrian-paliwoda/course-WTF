@@ -9,6 +9,7 @@
 
 body {
   background-color: #fefefe;
+  font-family: Arial, Helvetica, sans-serif
 }
 
 h1 {
@@ -27,6 +28,12 @@ section {
 .header {
   position: sticky;
   top:0;
+}
+
+.page-header__heading {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 2px;
 }
 
 .main {
@@ -130,4 +137,12 @@ section {
 
 .footer__content {
   color: #949499;
+}
+
+.section p {
+  line-height: 1.5;
+}
+
+.special {
+  color: hotpink;
 }
