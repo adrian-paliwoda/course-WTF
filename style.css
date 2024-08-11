@@ -30,8 +30,12 @@ section {
   top:0;
 }
 
+.page-header{
+  padding: 16px;
+}
+
 .page-header__heading {
-  font-size: 32px;
+  font-size: 3rem;
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -60,9 +64,6 @@ section {
 
 .about__heading {
   color: #044550;
-}
-
-.about__description {
 }
 
 .navigation {
