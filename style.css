@@ -147,3 +147,20 @@ section {
 .special {
   color: hotpink;
 }
+
+.article__list {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: disc;
+}
+
+table{
+  width: 100%;
+  text-align: center;
+}
+
+table caption {
+  margin-bottom: 2rem;
+}
