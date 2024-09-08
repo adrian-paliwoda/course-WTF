@@ -9,6 +9,18 @@
 // const emptyElement = document.querySelector('#empty-element');
 // emptyElement.innerHTML = '<p>Pusty element</p>'
 
+if ('JavaScript'!= 'Java') {
+  console.log('JavaScript to nie jest Java');
+}
+
+if ('2' == 2 && typeof '2' == typeof 2) {
+  console.log('2 == 2');
+}
+
+if ('2' === 2) {
+  console.log('2 == 2');
+}
+
 function calculate(myNumber) {
   console.log("Passed parameter: " + myNumber);
   myNumber = +3;
@@ -18,6 +30,10 @@ function calculate(myNumber) {
 
 function hello() {
     console.log("Hello World!");    
+}
+
+function hello(name, age) {
+    console.log("Hello " + name + ". Masz " + age + "lat");    
 }
 
 const calculateFat = (number) => {
@@ -94,3 +110,4 @@ console.log(humanThree.toString());
 console.log(humanOne.address.city);
 console.log(humanFour.address.city);
 
+console.log(hello("Adrian", 32));

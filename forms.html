@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moja strona domowa</title>
+    <link rel="shortcut icon" href="#" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation__link" href="nauka-html.html">Nauka html</a>
+        <a class="navigation__link" href="nauka-css.html">Nauka css</a>
+        <a class="navigation__link" href="forms.html">Forms</a>
+      </nav>
+    </header>
+
+    <section class="form">
+      <form method="POST" action="https://forms.cotenfrontend.pl">
+        <p>
+          <label for="firstName">Imię</label>
+          <input
+            id="firstName"
+            name="firstName"
+            type="text"
+            value="Adrian"
+            placeholder="Podaj imię"
+          />
+        </p>
+        <p>
+          <label for="lastName">Nazwisko</label>
+          <input
+            required
+            id="lastName"
+            name="lastName"
+            type="text"
+            placeholder="Podaj nazwisko"
+          />
+        </p>
+        <p>
+          <label for="password">Hasło</label>
+          <input id="password" name="password" type="password" />
+        </p>
+        <p>
+          <label for="size">Wybierz rozmiar</label>
+          <select id="size" name="size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option selected value="XL">XL</option>
+          </select>
+        </p>
+        <p>
+          <label for="avatarFile">Plik z awatarem</label>
+          <input id="avatarFile" name="avatarFile" type="file" />
+        </p>
+        <p>
+          <label for="favNumber">Ulubiona liczba</label>
+          <input
+            type="range"
+            id="favNumber"
+            name="favNumber"
+            min="0"
+            max="100"
+            step="5"
+            value="20"
+          />
+        </p>
+        <fieldset>
+          <legend>Dane adresowe:</legend>
+          <p>
+            <label for="street">Ulica</label>
+            <input
+              id="street"
+              name="street"
+              type="text"
+              placeholder="Podaj Twoją ulicę"
+            />
+          </p>
+          <p>
+            <label for="city">Miasto</label>
+            <input
+              id="city"
+              name="city"
+              type="text"
+              placeholder="Podaj Twoje miasto"
+            />
+          </p>
+          <p>
+            <label for="postalcode">Kod pocztowy</label>
+            <input type="text" pattern="[0-9]{2}-[0-9]{3}" required/>
+          </p>
+          <p>
+            <label for="phone">Number telefonu</label>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="Podaj Twoj numer"
+            />
+          </p>
+          <p>
+            <label for="age">Wiek</label>
+            <input
+              id="age"
+              name="age"
+              type="number"
+              placeholder="Podaj Twoj Wiek"
+            />
+          </p>
+          <p>
+            <label for="mail">Email</label>
+            <input
+              required
+              id="mail"
+              name="mail"
+              type="email"
+              placeholder="Podaj Twoj E-mail"
+            />
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Ulubione lody</legend>
+          <p>
+            <label
+              ><input
+                name="icecream"
+                type="radio"
+                value="chocalate"
+                checked
+              />Czekoladowe
+            </label>
+          </p>
+          <p>
+            <label
+              ><input name="icecream" type="radio" value="vanilla" />Wanilniowe
+            </label>
+          </p>
+          <p>
+            <label
+              ><input
+                name="icecream"
+                type="radio"
+                value="stawberry"
+              />Truskawkowe
+            </label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Ulubione zespoly</legend>
+          <p>
+            <label
+              ><input
+                name="band"
+                type="checkbox"
+                value="lor"
+                checked
+              />Lor</label
+            >
+          </p>
+          <p>
+            <label
+              ><input name="band" type="checkbox" value="akcent" />Akcent</label
+            >
+          </p>
+          <p>
+            <label
+              ><input name="band" type="checkbox" value="stones" />Stones</label
+            >
+          </p>
+        </fieldset>
+        <p>
+          <label for="comment">Komentarz</label>
+          <textarea
+            id="comment"
+            name="comment"
+            placeholder="Wpisz komentarz"
+          ></textarea>
+        </p>
+
+        <input type="submit" value="Wyślij" />
+        <!-- <p>
+          <button>Wyślij</button>
+         </p> -->
+      </form>
+    </section>
+  </body>
+</html>
