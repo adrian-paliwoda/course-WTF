@@ -9,16 +9,36 @@
 // const emptyElement = document.querySelector('#empty-element');
 // emptyElement.innerHTML = '<p>Pusty element</p>'
 
-if ('JavaScript'!= 'Java') {
-  console.log('JavaScript to nie jest Java');
+const button = document.querySelector(".page-header__button--js");
+if (button) {
+  button.addEventListener("click", () => {
+    const header = document.querySelector(".page-header__heading--js h1");
+    header.textContent = "Inny text nagłówka";
+    console.log("Clicked");
+  });
+}
+const hamburger = document.querySelector(".hamburger--js");
+hamburger.addEventListener("click", () => {
+  console.log("hamburger");
+  const navigation = document.querySelector(".navigation--js");
+  navigation.classList.toggle("navigation__open");
+});
+// function onClick() {
+//   const header = document.querySelector('main header h1');
+//   header.textContent = "Inny text nagłówka";
+//   console.log('Clicked');
+// }
+
+if ("JavaScript" != "Java") {
+  console.log("JavaScript to nie jest Java");
 }
 
-if ('2' == 2 && typeof '2' == typeof 2) {
-  console.log('2 == 2');
+if ("2" == 2 && typeof "2" == typeof 2) {
+  console.log("2 == 2");
 }
 
-if ('2' === 2) {
-  console.log('2 == 2');
+if ("2" === 2) {
+  console.log("2 == 2");
 }
 
 function calculate(myNumber) {
@@ -29,16 +49,16 @@ function calculate(myNumber) {
 }
 
 function hello() {
-    console.log("Hello World!");    
+  console.log("Hello World!");
 }
 
 function hello(name, age) {
-    console.log("Hello " + name + ". Masz " + age + "lat");    
+  console.log("Hello " + name + ". Masz " + age + "lat");
 }
 
 const calculateFat = (number) => {
-    return number * 8;
-}
+  return number * 8;
+};
 
 const deathStar = {
   diameter: 12000,
@@ -47,43 +67,43 @@ const deathStar = {
   },
   isOperating: true,
   levels: 357,
-  name: 'Death Star',
+  name: "Death Star",
   population: 10000,
   commander: {
-    name: 'darth vader'
-  }
-}
+    name: "darth vader",
+  },
+};
 
 const humanOne = {
-  name: 'Maciek',
+  name: "Maciek",
   age: 32,
   address: {
-    street: 'Warszawska',
-    city: 'Białystok'
+    street: "Warszawska",
+    city: "Białystok",
   },
   toString() {
-    return `Name: ${this.name}, Age: ${this.age}`
-  }
-}
+    return `Name: ${this.name}, Age: ${this.age}`;
+  },
+};
 
 const humanTwo = {
-  name: 'Stefan',
-  age: 32,  
+  name: "Stefan",
+  age: 32,
   toString() {
-    return `Name: ${this. name}, Age: ${this.age}`
-  }
-}
+    return `Name: ${this.name}, Age: ${this.age}`;
+  },
+};
 
 const humanFour = {
-  name: 'Adrian',
+  name: "Adrian",
   age: humanOne.age,
   toString() {
-    return `Name: ${this. name}, Age: ${this.age}`
-  }
-}
+    return `Name: ${this.name}, Age: ${this.age}`;
+  },
+};
 humanFour.age = humanFour.age + 9;
 humanFour.address = humanOne.address;
-humanFour.address.city = 'Kraków';
+humanFour.address.city = "Kraków";
 
 hello();
 const result = calculate(5);
@@ -93,10 +113,9 @@ console.log(calculateFat(6));
 console.log(deathStar);
 console.log(deathStar.name);
 console.log(deathStar["name"]);
-console.log(deathStar["commander"]['name']);
+console.log(deathStar["commander"]["name"]);
 
-deathStar.fire('Alderaan');
-
+deathStar.fire("Alderaan");
 
 humanTwo.age = 35;
 console.log(humanOne.toString());

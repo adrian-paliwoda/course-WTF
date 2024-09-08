@@ -6,15 +6,22 @@
     <title>Moja strona domowa</title>
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <nav class="navigation">
+      <nav class="navigation navigation--js">
         <a class="navigation__link" href="nauka-html.html">Nauka html</a>
         <a class="navigation__link" href="nauka-css.html">Nauka css</a>
         <a class="navigation__link" href="forms.html">Forms</a>
       </nav>
+      <button class="hamburger hamburger--js" aria-label="Menu">Menu</button>
+      <button
+        class="page-header__button page-header__button--js"
+
+      >
+        Zmień tekst nagłówka
+      </button>
     </header>
 
     <main class="main">
@@ -22,102 +29,105 @@
         <h1><span class="special">Adrian</span> - Strona domowa</h1>
       </header>
 
-      <section class="about" id="about">
-        <h2 class="about__heading">Kim jest ten typ?</h2>
-        <img class="about__picture" src="kot.jpg" alt="kot" />
-        <p class="about__description">
-          Hej! Na co dzień uczę wspaniałych ludzi <em>tajnej sztuki</em>
-          <i>frontendu</i> i pracuję w firmie o ciężko zapisywalnej nazwie:
-          EYEDEA. Prowadzę szkolenie
-          <a class="about__link" href="https://cotenfrontend.pl">WTF</a><br />
-          Poza tym bardzo <b>lubię robić zdjęcia i latać dronem</b>. Witam Cię
-          na mojej stronie domowej, mam nadzieję, że znajdziesz tu trochę
-          przydatnych rzeczy.
-          <a class="about__link" href="#notatki">Przejdź do notatek</a>
-        </p>
-      </section>
+      <div class="article-grid">
+        <section class="about" id="about">
+          <h2 class="about__heading">Kim jest ten typ?</h2>
+          <img class="about__picture" src="kot.jpg" alt="kot" />
+          <p class="about__description">
+            Hej! Na co dzień uczę wspaniałych ludzi <em>tajnej sztuki</em>
+            <i>frontendu</i> i pracuję w firmie o ciężko zapisywalnej nazwie:
+            EYEDEA. Prowadzę szkolenie
+            <a class="about__link" href="https://cotenfrontend.pl">WTF</a><br />
+            Poza tym bardzo <b>lubię robić zdjęcia i latać dronem</b>. Witam Cię
+            na mojej stronie domowej, mam nadzieję, że znajdziesz tu trochę
+            przydatnych rzeczy.
+            <a class="about__link" href="#notatki">Przejdź do notatek</a>
+          </p>
+        </section>
 
-      <section class="section">
-        <h2 class="section__header section__header--special">Artykuły</h2>
-        <article class="article">
-          <h3 class="article__header">Jak stworzy prawidłowo HTML'a?</h3>
-          <p>Tworzenie zgodnie ze standardami</p>
-        </article>
+        <section class="section">
+          <h2 class="section__header section__header--special">Artykuły</h2>
+          <article class="article">
+            <h3 class="article__header">Jak stworzy prawidłowo HTML'a?</h3>
+            <p>Tworzenie zgodnie ze standardami</p>
+          </article>
 
-        <article class="article">
-          <h3 class="article__header">Jak dobrze przygotować style?</h3>
-          <p>Tworzymy łądne style :)</p>
-        </article>
+          <article class="article">
+            <h3 class="article__header">Jak dobrze przygotować style?</h3>
+            <p>Tworzymy łądne style :)</p>
+          </article>
 
-        <article class="article">
-          <h3 class="article__header">Moje ulubione znaczniki</h3>
-          <ul class="article__list">
-            <li>&lt;h1&gt;</li>
-            <li>
-              &lt;ul&gt;&euro;
-              <ol>
-                <li>Otworz edytor</li>
-                <li>! [tab]</li>
-                <li>zapisz plik</li>
-              </ol>
-            </li>
-            <li>a</li>
-          </ul>
-        </article>
+          <article class="article">
+            <h3 class="article__header">Moje ulubione znaczniki</h3>
+            <ul class="article__list">
+              <li>&lt;h1&gt;</li>
+              <li>
+                &lt;ul&gt;&euro;
+                <ol>
+                  <li>Otworz edytor</li>
+                  <li>! [tab]</li>
+                  <li>zapisz plik</li>
+                </ol>
+              </li>
+              <li>a</li>
+            </ul>
+          </article>
 
-        <article class="article">
-          <h3 class="article__header">Kroki do tworznia pliku</h3>
-          <ol>
-            <li>Otworz edytor</li>
-            <li>! [tab]</li>
-            <li>zapisz plik</li>
-          </ol>
-        </article>
+          <article class="article">
+            <h3 class="article__header">Kroki do tworznia pliku</h3>
+            <ol>
+              <li>Otworz edytor</li>
+              <li>! [tab]</li>
+              <li>zapisz plik</li>
+            </ol>
+          </article>
 
-        <article class="article">
-          <h2>Potwory w Wiedźminie</h2>
-          <dl>
-            <dt>Arachnomorf</dt>
-            <dd>
-              Arachnomorf jest podatny na większość wieźminiśkich znaków - można
-              go ogłuszyć Aardem lub spróbowaćz złapać w Yrden
-            </dd>
+          <article class="article">
+            <h2>Potwory w Wiedźminie</h2>
+            <dl>
+              <dt>Arachnomorf</dt>
+              <dd>
+                Arachnomorf jest podatny na większość wieźminiśkich znaków -
+                można go ogłuszyć Aardem lub spróbowaćz złapać w Yrden
+              </dd>
 
-            <dt>Krabopająk</dt>
-            <dd>
-              Potwór żyjący na pustyniach i bagnach, wyjątkowo jadowity. Może
-              udawać kwiat orchidei
-            </dd>
-          </dl>
-        </article>
+              <dt>Krabopająk</dt>
+              <dd>
+                Potwór żyjący na pustyniach i bagnach, wyjątkowo jadowity. Może
+                udawać kwiat orchidei
+              </dd>
+            </dl>
+          </article>
 
-        <article class="article">
-          <h2>Lekcje WTF</h2>
-          <table>
-            <caption>Rozpiska WTF</caption>
-            <thead>
-              <tr>
-                <th>Tydzien</th>
-                <th>Lekcja</th>
-                <th>Czas trwania</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>I</td>
-                <td>WTF: Intro</td>
-                <td>7:12</td>
-              </tr>
-              <tr>
-                <td>I</td>
-                <td>Ścieżka kariery</td>
-                <td>7:12</td>
-              </tr>
-            </tbody>
-          </table>
-        </article>
-      </section>
-
+          <article class="article">
+            <h2>Lekcje WTF</h2>
+            <table>
+              <caption>
+                Rozpiska WTF
+              </caption>
+              <thead>
+                <tr>
+                  <th>Tydzien</th>
+                  <th>Lekcja</th>
+                  <th>Czas trwania</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>I</td>
+                  <td>WTF: Intro</td>
+                  <td>7:12</td>
+                </tr>
+                <tr>
+                  <td>I</td>
+                  <td>Ścieżka kariery</td>
+                  <td>7:12</td>
+                </tr>
+              </tbody>
+            </table>
+          </article>
+        </section>
+      </div>
       <div id="empty-element"></div>
     </main>
 

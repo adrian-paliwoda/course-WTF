@@ -32,9 +32,12 @@ section {
   background-color: #cdc1f8;
 }
 
-.header {
-  position: sticky;
-  top: 0;
+header {
+  min-height: 50px;
+  background: hsl(271deg 49% 8%) 0%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .page-header {
@@ -42,7 +45,7 @@ section {
 }
 
 .page-header__heading {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -74,20 +77,6 @@ section {
   color: #044550;
 }
 
-.navigation {
-  padding: 16px;
-  background-color: blue;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-}
-
-.navigation__link {
-  color: white;
-}
-
 .section {
   background: #dcdcdc;
   margin-bottom: 16px;
@@ -109,6 +98,27 @@ section {
 
 .notes__heading {
   color: #1460aa;
+}
+
+.navigation {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  padding: 16px;
+  background-color: blue;
+  display: none;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navigation__link {
+  color: white;
+}
+
+.navigation__open {
+  display: flex;
 }
 
 .footer {
@@ -178,6 +188,11 @@ table caption {
   margin-bottom: 2rem;
 }
 
+.article-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 form {
   font-size: 1.5rem;
   color: #fefefe;
@@ -191,4 +206,68 @@ form {
 textarea {
   width: 100%;
   min-width: 20rem;
+}
+.page-header__button {
+  background-color: blue;
+  color: white;
+  font-weight: 700;
+  border: none;
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.page-header__button--js {
+}
+
+.hamburger {
+  padding: 4px;
+  background: none;
+  border: 0;
+  font-size: 2rem;
+}
+
+.hamburger--js {
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background: black;
+    font-size: 2rem;
+    color: red;
+  }
+  .article-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    background: black;
+    font-size: 3rem;
+  }
+
+  .article-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .navigation {
+    padding: 16px;
+    background-color: blue;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .navigation__link {
+    color: white;
+  }
 }
