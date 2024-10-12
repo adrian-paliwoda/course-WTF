@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h1 {
+        @apply text-6xl text-center
+    }
+}
+
+@layer components {
+    .btn {
+        @apply mx-auto mb-6 bg-white rounded w-56 h-12 flex justify-center items-center touch-manipulation
+    }
+}

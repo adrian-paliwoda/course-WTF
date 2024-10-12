@@ -1,0 +1,10 @@
+{
+  "name": "Simple editor",
+  "short_name": "SE",
+  "theme_color": "#557788",
+  "background_color": "#557788",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/"
+}

@@ -1,0 +1,28 @@
+section {
+  background-color: #cdc1f8;
+}
+
+.section {
+  background: #dcdcdc;
+  margin-bottom: 16px;
+  padding: 16px;
+
+  &__header {
+    color: #044550;
+
+    &--special {
+      color: tomato;
+    }
+  }
+}
+
+.section p {
+  line-height: 1.5;
+}
+
+@supports (display: flex) {
+  .section p {
+    line-height: 1.5;
+  }
+
+}

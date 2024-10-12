@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-color: tomato;
+}
+
+.link {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 2rem;
+    opacity: 0.5;
+    display: inline-block;
+    /* transition: color 3s cubic-bezier(0.075, 0.82, 0.165, 1), font-size 2s linear, opacity 2s linear; */
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center center;
+
+}
+
+.link:hover {
+    color: tomato;
+    font-size: 2rem;
+    opacity: 1;
+    transform: rotate(45deg) scale(0.4) translate(-2rem, 4rem);
+}
+
+
+.wave {
+    display: inline-block;
+    font-size: 3rem;
+    transform: rotate(30deg);
+    animation: wave 3s 1 alternate-reverse forwards;
+}
+
+@keyframes wave {
+    0%{
+        transform: rotate(-30deg)
+    }
+    50% {
+        transform: rotate(60deg)
+    }
+    100% {
+        transform: rotate(30deg)
+    }
+}

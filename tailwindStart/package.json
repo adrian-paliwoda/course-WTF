@@ -1,0 +1,19 @@
+{
+  "name": "tailwindStart",
+  "dependencies": {
+    "parcel": "^2.12.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cow": "cowsay Cześć"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "2.12.0",
+    "@parcel/transformer-sass": "2.12.0",
+    "@parcel/transformer-webmanifest": "2.12.0"
+  }
+}

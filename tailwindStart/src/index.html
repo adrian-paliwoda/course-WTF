@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Simple editor</title>
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+    <link rel="manifest" href="manifest.json" />
+    <meta
+      name="description"
+      content="Simple editor. It can load and save notes"
+    />
+    <meta property="og:title" content="Simple editor" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body
+    class="p-4 flex flex-col items-center justify-center min-h-screen gap-8 bg-[hotpink] font-Montserrat"
+  >
+    <main>
+      <img src="images/wtf-mini.svg" />
+      <svg
+        width="217"
+        height="220"
+        viewBox="0 0 217 220"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <style>
+          @keyframes blink {
+            from {
+              opacity: 0.3;
+            }
+            to {
+              opacity: 1;
+            }
+          }
+
+          .blink {
+            animation: blink 3s ease-in-out infinite alternate-reverse;
+          }
+        </style>
+
+        <g class="blink">
+          <path
+            d="M196.227 27.0502V44.5669L128.057 69.3049L132.449 50.1942L196.227 27.0502Z"
+            fill="white"
+          />
+          <path
+            d="M196.227 44.567V27.0503L142.268 7.47095L138.553 23.6389L196.227 44.567Z"
+            fill="red"
+          />
+          <path
+            d="M20.566 73.2812V55.7645L84.344 32.6205L79.9525 51.7312L20.566 73.2812Z"
+            fill="white"
+          />
+          <path
+            d="M20.566 55.7645V73.2812L70.8093 91.5161L74.5246 75.3482L20.566 55.7645Z"
+            fill="white"
+          />
+          <path
+            d="M108.396 6.37609L90.8303 82.8147L108.396 76.443L125.962 0L108.396 6.37609Z"
+            fill="white"
+          />
+          <path
+            d="M3.01389 131.977V219.63L213.986 143.073V55.4198L3.01389 131.977ZM73.3379 176.579L55.7568 182.956V178.573L49.8983 180.699V176.316L44.0348 178.442V182.824L38.1759 184.959V189.341L20.5949 195.723V143.13L38.1759 136.754V167.432L44.0348 165.307V160.924L49.8983 158.794V163.177L55.7568 161.043V130.364L73.3379 123.983V176.579ZM134.871 119.166L117.29 125.552V160.613L99.7093 167.003V131.941L82.1286 138.318V120.788L134.871 101.648V119.166ZM196.405 96.8537L161.243 109.608V118.373L187.615 108.806V126.336L161.243 135.903V144.669L143.662 151.046V98.4533L196.405 79.3099V96.8537Z"
+            fill="white"
+          />
+        </g>
+      </svg>
+
+      <h2>My editor <span class="inline-block animate-wiggle">Write</span></h2>
+      <form class="border-spacing-3">
+        <p>
+          <textarea class="text-black border-slate-600" id="text" name="text">
+          </textarea>
+        </p>
+
+        <div class="flex flex-row items-center justify-center space-x-11">
+          <button class="mix-blend-saturation" id="loadButton">Load</button>
+          <button class="mix-blend-saturation" id="saveButton">Save</button>
+        </div>
+      </form>
+
+      <form class="max-w-sm mx-auto">
+        <label
+          for="message"
+          class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
+          >Your editor</label
+        >
+        <textarea
+          id="message"
+          rows="4"
+          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Leave a comment..."
+        ></textarea>
+        <button
+          class="mix-blend-saturation hover:bg-red-50 duration-500 transition-colors"
+          id="LoadFromFlowBite"
+        >
+          Load
+        </button>
+        <button class="mix-blend-saturation" id="SaveFromFlowBite">Save</button>
+      </form>
+    </main>
+
+    <div class="px-4 py-4 m-4 border-2 w-1/2 max-w-3xl mx-auto">
+      Jestem testowym divem
+    </div>
+    <div class="grid grid-cols-4 w-full max-w-3xl">
+      <div
+        class="text-emerald-300 bg-slate-950 border-red-700 text-center text-4xl font-bold"
+      >
+        a
+      </div>
+      <div>b</div>
+      <div>c</div>
+      <div>d</div>
+    </div>
+
+    <button
+      type="button"
+      class="text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+    >
+      Blue
+    </button>
+
+    <a class="link" href="#">Jestem Linkiem</a>Lorem ipsum
+    <span class="wave">Loremek</span>
+
+    <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800">
+      <div
+        class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between"
+      >
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400"
+          >© 2023
+          <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>.
+          All Rights Reserved.
+        </span>
+        <ul
+          class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0"
+        >
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+          </li>
+          <li>
+            <a href="#" class="hover:underline">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/main.js" type="module" defer></script>
+  </body>
+</html>

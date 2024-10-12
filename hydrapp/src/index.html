@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hydro App</title>
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/x-icon" href="./images/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <meta name="description" content="Simple Hydro App" />
+    <meta property="og:title" content="Simple Hydro App" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="./images/icon.png" />
+  </head>
+  <body class="bg-slate-900 min-h-screen flex justify-center items-center font-roboto font-medium">
+    <main class="group">
+      <h1 class="group-hover:underline text-white text-6xl text-center mb-16">Hydro App</h1>
+
+      <div class="relative mb-12">
+        <img src="./images/water-glass.svg" alt="Water glass" />
+        <p id="counter" class="text-black absolute top-0 left-0 w-full h-full flex content-center justify-center items-center text-9xl">
+          0
+        </p>
+      </div>
+
+      <button
+        class="btn group-hover:scale-110"
+        id="addGlass"
+      >
+        Dodaj szklankę
+      </button>
+      <button
+        class="btn bg-transparent text-red-500"
+        id="removeGlass"
+      >
+        Usuń szklankę
+      </button>
+    </main>
+    <script src="js/main.js" type="module" defer></script>
+  </body>
+</html>
