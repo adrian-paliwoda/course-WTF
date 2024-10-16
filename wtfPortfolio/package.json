@@ -11,7 +11,9 @@
     "@parcel/packager-raw-url": "2.12.0",
     "@parcel/transformer-webmanifest": "2.12.0",
     "parcel": "^2.12.0",
-    "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13"
+    "tailwindcss": "^3.4.14"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.5"
   }
 }

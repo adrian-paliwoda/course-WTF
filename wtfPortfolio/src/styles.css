@@ -8,4 +8,20 @@
         background-color: #020916;
         color: white;
     }
+
+    .btn {
+        background-color: #CEFF7E;
+        color: black;
+        border-radius: 0.25rem;
+        padding: 0.25rem;
+    }
+
+    .btn-other{
+        background-color: #020916;
+        color: #CEFF7E;
+        border-radius: 0.25rem;
+        border-color: D2D5DA;
+        border-width: 0.1rem;
+        padding: 0.25rem;
+    }
 }
