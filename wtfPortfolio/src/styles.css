@@ -13,7 +13,7 @@
         background-color: #CEFF7E;
         color: black;
         border-radius: 0.25rem;
-        padding: 0.25rem;
+        padding: 0.5rem;
     }
 
     .btn-other{
@@ -22,6 +22,11 @@
         border-radius: 0.25rem;
         border-color: D2D5DA;
         border-width: 0.1rem;
-        padding: 0.25rem;
+        padding: 0.5rem;
+    }
+
+    header ul li {
+        display: flex;
+        align-items: center;
     }
 }
