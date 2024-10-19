@@ -2,28 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    body {
-        background-color: #020916;
-        color: white;
-    }
+  body {
+    background-color: #020916;
+    color: white;
+  }
 
-    .btn {
-        background-color: #CEFF7E;
-        color: black;
-        border-radius: 0.25rem;
-        padding: 0.5rem;
-    }
+  .btn {
+    @apply flex flex-row justify-between items-stretch space-x-1;
 
-    .btn-other{
-        background-color: #020916;
-        color: #CEFF7E;
-        border-radius: 0.25rem;
-        border-color: D2D5DA;
-        border-width: 0.1rem;
-        padding: 0.5rem;
-    }
+    background-color: #ceff7e;
+    color: black;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+  }
 
+  .btn-other {
+    @apply flex flex-row justify-between items-stretch space-x-1;
 
+    background-color: #020916;
+    color: #ceff7e;
+    border-radius: 0.25rem;
+    border-color: #D2D5DA;
+    border-width: 0.1rem;
+    padding: 0.5rem;
+  }
+
+  #profile-foto {
+    border-top-right-radius: 8rem;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+    color: #9ca3af;
+  }
+  
+  #skills h3 {
+    @apply border-t-2 border-t-green-800 text-xl pt-8;
+    color: white;
+
+  }
+
+  p {
+    @apply text-2xl;
+    color: #9ca3af;
+  }
+
+  section {
+    @apply pl-16 pr-16;
+    @apply pt-8 pb-8 lg:pt-32 lg:pb-32;
+  }
+
+  .skill div {
+    @apply rounded-lg;
+    background-color: #0e1421;
+  }
+
+  #after-hours div p {
+    font-size: 0.75rem;
+  }
+
+  #contact div a {
+    @apply rounded-3xl p-4;
+    background-color: #141a26;
+  }
+
+  #skills ul > li:before{
+    content: '- ';
+    text-indent: 0.1rem;
+  }
 }

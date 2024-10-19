@@ -11,36 +11,33 @@
 
     <link href="./styles.css" type="text/css" rel="stylesheet" />
     <link rel="manifest" href="manifest.json" />
+    <script src="./main.js" type="module" defer></script>
   </head>
   <body>
-    <main class="flex flex-col justify-between content-center items-stretch">
+    <main class="flex flex-col justify-between items-stretch">
       <header
-        class="flex flex-row justify-between content-center items-center pr-16 pl-16 pt-6 pb-6"
+        class="flex flex-col md:flex-row justify-between items-center pr-16 pl-16 pt-6 pb-6"
       >
-        <div
-          class="flex flex-row justify-center content-center items-center space-x-2"
-        >
+        <div class="flex flex-row justify-center items-center space-x-2">
           <img
             src="./images/Near_name.svg"
             class="w-10 h-10 max-h-10 max-w-10"
             alt="name-decorator"
           />
-          <div class="flex-col justify-around content-center">
-            <h1>Adrian Paliwoda</h1>
-            <p>Backend Developer</p>
+          <div class="flex-col justify-around">
+            <h1>Maciek WTFowicz</h1>
+            <p>Frontend developer</p>
           </div>
         </div>
 
         <ul
-          class="flex flex-row content-center items-center justify-between space-x-10"
+          class="flex md:flex-row flex-col items-center justify-between md:space-x-10 md:space-y-0 space-y-2"
         >
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skils</a></li>
           <li><a href="#projects">Projects</a></li>
           <li class="w-11">
-            <a
-              class="flex flex-row content-center justify-center"
-              href="#resume"
+            <a class="flex flex-row justify-center" href="#resume"
               ><img src="./images/download.svg" />Resume</a
             >
           </li>
@@ -50,132 +47,224 @@
 
       <section
         id="about"
-        class="flex flex-row space-x-6 pt-20 pl-8 pr-8 pb-20 space-y-20"
+        class="flex flex-col-reverse md:flex-row justify-between items-stretch md:space-x-36 space-y-2"
       >
-        <div class="flex flex-col space-x-6 pt-20 pl-8 pr-8 pb-20 space-y-2">
-          <h1>My name is Adrian and I'm an .NET developer</h1>
+        <div class="flex flex-col space-y-16 justify-start">
+          <h1>
+            My name is Maciek and I’m an aspiring
+            <span class="text-lime-500">Frontend developer</span> and a keen
+            Star Wars fan.
+          </h1>
           <p>
-            You might be interested in checking the list of my skills. Don’t
-            forget to have a glimpse at my projects. I’m looking for a new
-            challenges so if you have one - contact me 😊
+            You might be interested in checking the list of my
+            <span class="text-white">skills</span>. Don’t forget to have a
+            glimpse at my <span class="text-white">projects</span>. I’m looking
+            for a new challenges so if you have one -
+            <span class="text-white">contact me</span> 😊
           </p>
-          <div class="flex flex-row space-x-4">
-            <button class="btn">Get in touch</button>
-            <button class="btn-other">Get to know me</button>
+          <div
+            class="flex flex-col md:flex-row justify-center items-center md:space-x-4"
+          >
+            <button class="btn">
+              <img src="./images/get_in_touch.svg" />Get in touch
+            </button>
+            <button class="btn-other">
+              <img src="./images/get_to_know_me.svg" />Get to know me
+            </button>
           </div>
         </div>
-        <img src="./images/profile-foto.png" alt="photo" />
+
+        <img id="profile-foto" src="./images/profile-foto.png" alt="photo" />
       </section>
 
       <section
         id="skills"
-        class="flex flex-col justify-start items-start pt-20 pl-8 pr-8 pb-20 space-y-2"
+        class="flex flex-col justify-start items-stretch space-y-20"
       >
-        <h2 class="h-14">My skills</h2>
-        <p>
-          I've separatedd my skils to couple of type. I hope it help you know
-          me. Check out what I can do below!
-        </p>
-        <div class="flex justify-center content-center flex-row space-x-6">
-          <div>
-            <picture></picture>
-            <div>
-              <img src="./images/shape_1.svg" alt="working knowlegde" />
+        <div>
+          <h2>My skills</h2>
+          <p>
+            I've picked up some cool skills along the way, and I'm excited to
+            share them with you. Check out what I can do below!
+          </p>
+        </div>
+        <div
+          class="skill flex flex-col md:flex-row justify-around items-stretch md:space-x-4 space-y-4"
+        >
+          <div
+            class="flex flex-col justify-start items-stretch space-y-20 p-10"
+          >
+            <img src="./images/shape_1.svg" alt="working knowlegde" />
+            <div class="flex flex-col space-y-3">
               <h3>Working knowlegde</h3>
-              <ul>
-                <li>HTML5</li>
+              <ul >
+                <li>Semantic HTML 5</li>
+                <li>Flexbox</li>
+                <li>Markdown</li>
+                <li>JS: local storage</li>
+                <li>Figma</li>
+                <li>CSS grid</li>
+                <li>JS: DOM manipulationsgrid</li>
+                <li>SASS</li>
               </ul>
             </div>
           </div>
-          <div>
-            <picture></picture>
-            <div>
-              <img src="./images/shape_2.svg" alt="know something about" />
+
+          <div
+            class="flex flex-col justify-start items-stretch space-y-20 p-10"
+          >
+            <img src="./images/shape_2.svg" alt="working knowlegde" />
+            <div class="flex flex-col space-y-3">
               <h3>Know something about</h3>
               <ul>
-                <li>HTML%</li>
+                <li>JavaScript ES6 + features</li>
+                <li>CSS animations</li>
+                <li>Working with API</li>
+                <li>NPM Scripts</li>
+                <li>PWA</li>
+                <li>Git</li>
+                <li>Accessibility</li>
               </ul>
             </div>
           </div>
-          <div>
-            <picture></picture>
-            <div>
-              <img src="./images/shape_3.svg" alt="working knowlegde" />
-              <h3>Working knowlegde</h3>
+
+          <div
+            class="flex flex-col justify-start items-stretch space-y-20 p-10"
+          >
+            <img src="./images/shape_3.svg" alt="working knowlegde" />
+            <div class="flex flex-col space-y-3">
+              <h3>Want to learn</h3>
               <ul>
-                <li>HTML%</li>
+                <li>React</li>
+                <li>Node</li>
+                <li>Electron</li>
+                <li>SSR</li>
+                <li>TypeScript</li>
+                <li>Gatsby</li>
+                <li>WebSockets</li>
               </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <section
-        id="projects"
-        class="flex flex-col justify-start items-start pt-20 pl-8 pr-8 pb-20 space-x-2"
-      >
+      <section id="projects" class="flex flex-col">
         <h2>Recent Projects</h2>
         <p>
-          I've brought a range of projects to life. Here's a snapshot of my
-          accomplishments so far.
+          Since diving into frontend development in 2023, I've brought a range
+          of projects to life. Here's a snapshot of my accomplishments so far.
         </p>
-        <div class="flex flex-col">Projects</div>
+        <div
+          id="projects"
+          class="flex flex-row flex-wrap justify-center items-center space-x-2 space-y-2"
+        >
+          Projects
+        </div>
       </section>
 
       <section
-        id="resume"
-        class="flex flex-col justify-start items-start pt-20 pl-8 pr-8 pb-20"
+        id="after-hours"
+        class="flex flex-col justify-start items-start space-y-4"
       >
-        <h2>After hours</h2>
+        <h2 class="flex self-start">After hours</h2>
         <p>
           Outside of my regular working hours, I delve into an array of
           activities and passions. Here's a glimpse into how I spend my
           after-hours.
         </p>
         <div
-          class="flex flex-row justify-start items-start pt-20 pl-8 pr-8 pb-20 space-x-2"
+          class="flex flex-col md:flex-row justify-center items-stretch space-x-4"
         >
           <div>
-            <picture></picture>
-            <p>Coffee</p>
+            <img src="./images/hobby_1.png" />
+            <h3>Electronic Music</h3>
+            <p>
+              Outside of my regular working hours, I immerse myself in the
+              pulsating rhythms and innovative sounds of electronic music
+            </p>
           </div>
           <div>
-            <picture></picture>
-            <p>Tea</p>
+            <img src="./images/hobby_2.png" />
+            <h3>Star Wars Universum</h3>
+            <p>
+              In a galaxy not so far away, my leisure time is often spent
+              exploring the intricate lore and captivating tales of Star Wars.
+            </p>
           </div>
           <div>
-            <picture></picture>
-            <p>Fencing</p>
+            <img src="./images/hobby_3.png" />
+            <h3>Video Games</h3>
+            <p>
+              Lost in virtual realms, I find joy and challenge in the dynamic
+              world of video games.
+            </p>
+          </div>
+          <div>
+            <img src="./images/hobby_4.png" />
+            <h3>Strength Training</h3>
+            <p>
+              Empowering both body and mind, I'm dedicated to the discipline of
+              strength training, continuously pushing my limits.
+            </p>
           </div>
         </div>
       </section>
 
       <section
         id="contact"
-        class="flex flex-col justify-center content-center pt-20 pl-8 pr-8 pb-10 space-y-1"
+        class="flex flex-col justify-center items-center space-y-5"
       >
-        <h2>Let's work together</h2>
-        <p>
-          I’m open for new opportunities. If you have one for me we should talk!
-        </p>
-        <a href="mailto:adrian94@tutanota.com" class="btn">Mail me</a>
-        <div
-          class="flex flex-col justify-center content-center pt-10 pl-8 pr-8 pb-10"
+        <h1>Let's work together</h1>
+        <p>I’m open for new opportunities.</p>
+        <p>If you have one for me we should talk!</p>
+        <a
+          href="mailto:j.kozlowski@mail.com"
+          class="btn flex flex-row justify-center items-center space-x-1"
+          ><img src="./images/mail.svg" />j.kozlowski@mail.com</a
         >
+        <div class="flex flex-col justify-center items-center space-y-2">
           <h2>or find me on</h2>
-          <div class="flex flex-row justify-center content-center pl-8 pr-8">
+          <div class="flex flex-row justify-center items-center space-x-4">
             <a
-              href="http://bitbucket.org/AdrianPaliwoda"
+              href="http://bitbucket.org/"
               target="_blank"
               rel="noreferrer noopener"
-              ><img src="./images/github.png"
-            /></a>
+              ><img src="./images/github.png" />
+            </a>
             <a
-              href="https://www.linkedin.com/in/adrian-paliwoda-438448142/"
+              href="https://codepen.io/"
               target="_blank"
               rel="noreferrer noopener"
-              ><img src="./images/linkedin.png"
-            /></a>
+              ><img src="./images/codepen.svg" />
+            </a>
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src="./images/linkedin.png" />
+            </a>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src="./images/facebook.svg" />
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src="./images/instagram.svg" />
+            </a>
+            <a
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src="./images/twitter.svg" />
+            </a>
           </div>
         </div>
       </section>
