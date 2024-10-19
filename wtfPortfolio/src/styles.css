@@ -3,11 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    background-color: #020916;
-    color: white;
-  }
-
   .btn {
     @apply flex flex-row justify-between items-stretch space-x-1;
 
@@ -23,7 +18,7 @@
     background-color: #020916;
     color: #ceff7e;
     border-radius: 0.25rem;
-    border-color: #D2D5DA;
+    border-color: #d2d5da;
     border-width: 0.1rem;
     padding: 0.5rem;
   }
@@ -40,11 +35,10 @@
     @apply text-2xl;
     color: #9ca3af;
   }
-  
+
   #skills h3 {
     @apply border-t-2 border-t-green-800 text-xl pt-8;
     color: white;
-
   }
 
   p {
@@ -66,13 +60,53 @@
     font-size: 0.75rem;
   }
 
-  #contact div a {
-    @apply rounded-3xl p-4;
+  #contact ul li {
+    @apply rounded-full p-4;
     background-color: #141a26;
   }
 
-  #skills ul > li:before{
-    content: '- ';
+  #skills ul > li:before {
+    content: "- ";
     text-indent: 0.1rem;
+  }
+
+  #after-hours img {
+    min-width: 316;
+    min-height: 480px;
+    max-width: 316px;
+    max-height: 480px;
+  }
+
+  #after-hours p {
+    line-height: normal;
+  }
+
+  .project-item {
+    width: 300px;
+  }
+
+  .project-item__header {
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    border-radius: 0.5rem 0.5rem 0 0;
+    background-color: #252a36;
+  }
+
+  .project-content {
+    background-color: #0f1522;
+  }
+
+  .project-content img {
+    display: inline;
+  }
+
+  .project-content a {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-content span {
+    background-color: #171d29;
   }
 }

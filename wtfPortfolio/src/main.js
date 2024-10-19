@@ -1,13 +1,13 @@
 const projectsContainer = document.getElementById('projects');
 
 const createComponent = (name, description, languages, stars, urlToRepo) => {
-    let component =  `<div><h1>${name} <span>${stars}</span></h1><p>${description}</p><ul>`;
+    let component =  `<div><h1>${name} <span><img src"./images/star.svg"/>${stars}</span></h1><p>${description}</p><ul>`;
 
     for(const language in languages) {
         component += `<li>${language}</li>`
     }
 
-    component = component + `</ul><a href=""><img src"./images/download.svg">View Demo</a><a href="${urlToRepo}"><img src"./images/download.svg">Source code</a></div>`;
+    component = component + `</ul><a href=""><img src"./images/view_demo.svg">View Demo</a><a href="${urlToRepo}"><img src"./images/github.svg">Source code</a></div>`;
     return component;
 }
 
@@ -45,4 +45,3 @@ const getProjects = async () => {
 
 
 
-getProjects();
