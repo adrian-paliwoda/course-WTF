@@ -17,7 +17,8 @@ module.exports = {
       },
       borderRadius: {
         'wtf': '0.625rem',
-        'wtftlr': '0.625rem 0.625rem 0 0'
+        'wtftlr': '0.625rem 0.625rem 0 0',
+        'wtfxl': '1.25rem'
 
       },
       boxShadow: {

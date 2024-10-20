@@ -22,7 +22,9 @@
   </head>
   <body class="font-dmsans bg-bg text-white">
     <main class="px-4">
-      <header class="mx-auto max-w-wtf px-16 py-6 flex flex-row justify-between gap-4">
+      <header
+        class="mx-auto max-w-wtf px-16 py-6 flex flex-row justify-between gap-4"
+      >
         <div class="flex flex-row gap-4 items-center">
           <img
             src="./images/Near_name.svg"
@@ -38,9 +40,7 @@
         </div>
 
         <nav class="hidden md:block">
-          <ul
-            class="flex flex-row gap-10 font-bold items-center"
-          >
+          <ul class="flex flex-row gap-10 font-bold items-center">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skils</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -49,25 +49,34 @@
                 <img src="./images/download.svg" />Resume</a
               >
             </li>
-            <li><a class="inline-block bg-accent text-bg rounded-xl py-3.5 px-8" href="#contact">Contact</a></li>
+            <li>
+              <a
+                class="inline-block bg-accent text-bg rounded-xl py-3.5 px-8"
+                href="#contact"
+                >Contact</a
+              >
+            </li>
           </ul>
         </nav>
       </header>
 
-      <section id="about" class="mx-auto max-w-wtf mb-20">
-        <div class="flex flex-col">
-          <img
-            id="profile-foto"
-            src="./images/profile-foto.png"
-            alt="photo"
-            class="w-full h-auto mb-5 rounded-tr-[8rem]"
-          />
-          <h1 class="text-2xl font-bold mb-4">
+      <section
+        id="about"
+        class="mx-auto max-w-wtf mb-20 md:pt-32 flex flex-col md:flex-row-reverse items-center md:justify-between md:gap-12"
+      >
+        <img
+          id="profile-foto"
+          src="./images/profile-foto.png"
+          alt="photo"
+          class="w-full md:w-[26rem] h-auto mb-5 rounded-tr-[8rem]"
+        />
+        <div class="max-w-3xl">
+          <h1 class="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:leading-snug">
             My name is Adrian and I'm an aspiring
             <span class="text-accent">Frontend developer</span> and a keen Star
             Wars fan.
           </h1>
-          <p class="text-gray-400 mb-8">
+          <p class="text-gray-400 mb-8 md:mb-16 font-medium md:text-2xl">
             You might be interested in checking the list of my
             <a class="text-white" href="#skills">skills</a>. Don’t forget to
             have a glimpse at my
@@ -75,15 +84,15 @@
             a new challenges so if you have one -
             <a class="text-white" href="#contact">contact me</a> 😊
           </p>
-          <div class="flex flex-col items-start gap-4 mb">
+          <div class="flex flex-col md:flex-row items-start gap-4 mb">
             <a
-              class="bg-accent text-bg flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-wtf"
+              class="bg-accent text-bg flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf md:rounded-wtfxl ring-accent"
               href="#contact"
             >
               <img src="./images/get_in_touch.svg" />Get in touch
             </a>
             <a
-              class="bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold text-xl py-2 px-4 items-center rounded-wtf"
+              class="bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf  md:rounded-wtfxl  ring-lightGray"
               href="#skills"
             >
               <img src="./images/get_to_know_me.svg" />Get to know me
@@ -333,7 +342,9 @@
         <p class="text-2xl text-center text-gray-400 font-medium mb-6">
           or find me on
         </p>
-        <ul class="flex flex-row justify-center items-center space-x-4 flex-wrap">
+        <ul
+          class="flex flex-row justify-center items-center space-x-4 flex-wrap"
+        >
           <li>
             <a
               class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
