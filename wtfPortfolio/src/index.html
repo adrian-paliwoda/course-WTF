@@ -92,7 +92,7 @@
         </div>
       </section>
 
-      <section id="skills" class="mx-auto max-w-wtf">
+      <section id="skills" class="mx-auto max-w-wtf mb-28">
         <div>
           <h2
             class="text-gray-400 text-xl tracking-wider font-bold mb-4 uppercase"
@@ -193,34 +193,60 @@
       </section>
 
       <section id="projects" class="mx-auto max-w-wtf">
-        <h2>Recent Projects</h2>
-        <p>
+        <h2
+          class="text-gray-400 text-xl tracking-wider font-bold mb-4 uppercase"
+        >
+          Recent Projects
+        </h2>
+        <p class="text-2xl font-medium tracking-tight mb-10">
           Since diving into frontend development in 2023, I've brought a range
           of projects to life. Here's a snapshot of my accomplishments so far.
         </p>
-        <div
-          id="projects"
-          class="flex flex-row flex-wrap justify-center items-center space-x-2 space-y-2"
-        >
-          <article class="project-item">
-            <div class="project-item__header">
-              <img src="./images/project__circle.svg" class="w-3 h-3" />
-              <img src="./images/project__circle.svg" class="w-3 h-3" />
-              <img src="./images/project__circle.svg" class="w-3 h-3" />
+        <div id="projects" class="grip space-x-2 space-y-2">
+          <article
+            class="bg-gradient-to-br from-white/10 to-white/5 rounded-wtf shadow-innerlight ring ring-bg overflow-clip"
+          >
+            <div
+              class="border-b border-bg h-11 p-4 bg-gradient-to-br from-white/10 to-white/5 rounded-wtftlr shadow-innerlight flex flex-row gap-1.5"
+            >
+              <spna class="bg-bg w-3 h-3 block rounded-full opacity-50"></spna>
+              <spna class="bg-bg w-3 h-3 block rounded-full opacity-50"></spna>
+              <spna class="bg-bg w-3 h-3 block rounded-full opacity-50"></spna>
             </div>
-            <div class="project-content">
-              <h3>
-                Angular app
-                <p><img src="./images/star.svg" class="w-3 h-3" />3</p>
-              </h3>
-              <p>Lorem ipsum</p>
-              <div>
-                <p>HTML</p>
-                <p>CSS</p>
-              </div>
-              <div>
-                <a href=""><img src="./images/view_demo.svg" />View demo</a>
-                <a href=""><img src="./images/github.png" />Source code</a>
+            <div class="p-5">
+              <header class="flex flex-row gap-4 items-center mb-4">
+                <h3 class="text-2xl font-bold leading-none">Angular app</h3>
+                <p
+                  class="h-6 flex gap-0.5 items-center bg-gray-400/10 py-1 px-2 leading-none font-medium rounded"
+                >
+                  <img src="./images/star.svg" class="" />3
+                </p>
+              </header>
+              <p class="text-gray-400 text-xl mb-4">Lorem ipsum</p>
+              <ul class="flex gap-2">
+                <li
+                  class="h-6 flex gap-0.5 items-center bg-gray-400/10 py-1 px-2 leading-none rounded text-sm font-bold"
+                >
+                  HTML
+                </li>
+                <li
+                  class="h-6 flex gap-0.5 items-center bg-gray-400/10 py-1 px-2 leading-none rounded text-sm font-bold"
+                >
+                  CSS
+                </li>
+              </ul>
+              <div class="flex flex-col gap-4 items-start mt-4">
+                <a
+                  class="bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold py-4 px-5 items-center rounded-[0.625rem]"
+                  href=""
+                  ><img src="./images/view_demo.svg" class="w-6 h-6" />View
+                  demo</a
+                >
+                <a
+                  class="bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold py-4 px-5 items-center rounded-[0.625rem]"
+                  ><img src="./images/github.svg" class="w-6 h-6" />Source
+                  code</a
+                >
               </div>
             </div>
           </article>
@@ -289,7 +315,7 @@
                 href="http://bitbucket.org/"
                 target="_blank"
                 rel="noreferrer noopener"
-                ><img src="./images/github.png" />
+                ><img src="./images/github.svg" />
               </a>
             </li>
             <li>
