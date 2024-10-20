@@ -62,7 +62,7 @@
 
       <section
         id="about"
-        class="mx-auto max-w-wtf mb-20 md:pt-32 flex flex-col md:flex-row-reverse items-center md:justify-between md:gap-12"
+        class="mx-auto max-w-wtf mb-20 md:mb-64 md:pt-32 flex flex-col md:flex-row-reverse items-center md:justify-between md:gap-12"
       >
         <img
           id="profile-foto"
@@ -205,28 +205,29 @@
         </div>
       </section>
 
-      <section id="projects" class="mx-auto max-w-wtf mb-28">
+      <section id="project-section" class="mx-auto max-w-wtf mb-28">
         <h2
           class="text-gray-400 text-xl tracking-wider font-bold mb-4 uppercase"
         >
           Recent Projects
         </h2>
-        <p class="text-2xl font-medium tracking-tight mb-10">
+        <p class="text-2xl md:text-4xl md:max-w-3xl font-medium tracking-tight mb-10 md:mb-20">
           Since diving into frontend development in 2023, I've brought a range
           of projects to life. Here's a snapshot of my accomplishments so far.
         </p>
-        <div id="projects" class="grip space-x-2 space-y-2">
+        <div id="projects" class="flex flex-row flex-wrap gap-4 items-center justify-center"
+        >
           <article
-            class="bg-gradient-to-br from-white/10 to-white/5 rounded-wtf shadow-innerlight ring ring-bg overflow-clip"
+            class="bg-gradient-to-br from-white/10 to-white/5 rounded-wtf md:rounded-wtfxl shadow-innerlight ring ring-bg overflow-clip"
           >
             <div
-              class="border-b border-bg h-11 p-4 bg-gradient-to-br from-white/10 to-white/5 rounded-wtftlr shadow-innerlight flex flex-row gap-1.5"
+              class="border-b border-bg h-11 p-4 bg-gradient-to-br from-white/10 to-white/5 rounded-t-wtf md:rounded-t-wtftlr shadow-innerlight flex flex-row gap-1.5"
             >
               <spna class="bg-bg w-3 h-3 block rounded-full opacity-50"></spna>
               <spna class="bg-bg w-3 h-3 block rounded-full opacity-50"></spna>
               <spna class="bg-bg w-3 h-3 block rounded-full opacity-50"></spna>
             </div>
-            <div class="p-5">
+            <div class="p-5 md:p-6 lg:p-10">
               <header class="flex flex-row gap-4 items-center mb-4">
                 <h3 class="text-2xl font-bold leading-none">Angular app</h3>
                 <p
@@ -248,15 +249,15 @@
                   CSS
                 </li>
               </ul>
-              <div class="flex flex-col gap-4 items-start mt-4">
+              <div class="flex flex-col md:flex-row gap-4 items-start mt-4">
                 <a
-                  class="bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold py-4 px-5 items-center rounded-wtf"
+                  class="md:text-xl bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl"
                   href=""
                   ><img src="./images/view_demo.svg" class="w-6 h-6" />View
                   demo</a
                 >
                 <a
-                  class="bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold py-4 px-5 items-center rounded-wtf"
+                  class="md:text-xl bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl"
                   ><img src="./images/github.svg" class="w-6 h-6" />Source
                   code</a
                 >
