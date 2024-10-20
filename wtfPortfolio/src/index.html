@@ -21,8 +21,8 @@
     />
   </head>
   <body class="font-dmsans bg-bg text-white">
-    <main class="flex flex-col justify-between items-stretch px-4">
-      <header class="mx-auto max-w-wtf px-16 py-6">
+    <main class="px-4">
+      <header class="mx-auto max-w-wtf px-16 py-6 flex flex-row justify-between gap-4">
         <div class="flex flex-row gap-4 items-center">
           <img
             src="./images/Near_name.svg"
@@ -37,19 +37,19 @@
           </div>
         </div>
 
-        <nav class="hidden">
+        <nav class="hidden md:block">
           <ul
-            class="flex md:flex-row flex-col items-center justify-between md:space-x-10 md:space-y-0 space-y-2"
+            class="flex flex-row gap-10 font-bold items-center"
           >
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skils</a></li>
             <li><a href="#projects">Projects</a></li>
             <li class="w-11">
-              <a class="flex flex-row justify-center" href="#" download>
+              <a class="flex flex-row justify-center gap-1" href="#" download>
                 <img src="./images/download.svg" />Resume</a
               >
             </li>
-            <li><a class="btn" href="#contact">Contact</a></li>
+            <li><a class="inline-block bg-accent text-bg rounded-xl py-3.5 px-8" href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
