@@ -25,43 +25,51 @@
   </head>
   <body class="font-dmsans bg-bg text-white">
     <main class="px-4">
-      <header
-        class="mx-auto max-w-wtf px-16 py-6 flex flex-row justify-between gap-4"
-      >
-        <div class="flex flex-row gap-4 items-center">
-          <img
-            src="./images/Near_name.svg"
-            class="w-10 h-10 max-h-10 max-w-10 animate-slowSpin"
-            alt="name-decorator"
-          />
+      <header class="px-0 py-3 md:py-6  sticky top-0 bg-bg/50 backdrop-blur-lg">
+        <div
+          class="mx-auto max-w-wtf flex flex-row justify-between gap-4"
+        >
+          <div class="flex flex-row gap-4 items-center">
+            <img
+              src="./images/Near_name.svg"
+              class="w-10 h-10 max-h-10 max-w-10 animate-slowSpin"
+              alt="name-decorator"
+            />
 
-          <div class="flex-col justify-around">
-            <p class="text-xl font-bold text-accent">Adrian WTFowicz</p>
-            <p aria-label="Frontend developer" class=" text-white opacity-40 uppercase text-xs tracking-wider">
-              Frontend developer
-            </p>
+            <div class="flex-col justify-around">
+              <p class="text-xl font-bold text-accent">Adrian WTFowicz</p>
+              <p
+                aria-label="Frontend developer"
+                class="text-white opacity-40 uppercase text-xs tracking-wider"
+              >
+                Frontend developer
+              </p>
+            </div>
           </div>
-        </div>
 
-        <nav class="hidden md:block">
-          <ul class="flex flex-row gap-10 font-bold items-center">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skils</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li class="w-11">
-              <a class="flex flex-row justify-center gap-1" href="#" download>
-                <img src="./images/download.svg" alt="resume download"/>Resume</a
-              >
-            </li>
-            <li>
-              <a
-                class="inline-block bg-accent text-bg rounded-xl py-3.5 px-8 hover:bg-accent-400 hover:ring-accent-400 transition-colors duration-500"
-                href="#contact"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
+          <nav class="hidden md:block">
+            <ul class="flex flex-row gap-10 font-bold items-center">
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skils</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li class="w-11">
+                <a class="flex flex-row justify-center gap-1" href="#" download>
+                  <img
+                    src="./images/download.svg"
+                    alt="resume download"
+                  />Resume</a
+                >
+              </li>
+              <li>
+                <a
+                  class="inline-block bg-accent text-bg rounded-xl py-3.5 px-8 hover:bg-accent-400 hover:ring-accent-400 transition-colors duration-500"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <section
@@ -107,13 +115,15 @@
               class="bg-accent text-bg flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf md:rounded-wtfxl ring-accent hover:bg-accent-400 hover:ring-accent-400 transition-colors duration-500"
               href="#contact"
             >
-              <img src="./images/get_in_touch.svg" alt="get in touch" />Get in touch
+              <img src="./images/get_in_touch.svg" alt="get in touch" />Get in
+              touch
             </a>
             <a
-              class="bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf md:rounded-wtfxl ring-lightGray ring-2 hover:ring-accent-400 transition-all"
+              class="bg-bg text-accent border-gray-800 border-2 flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf md:rounded-wtfxl ring-gray-800 ring-2 hover:ring-accent-400 transition-all"
               href="#skills"
             >
-              <img src="./images/get_to_know_me.svg" alt="get to know me"/>Get to know me
+              <img src="./images/get_to_know_me.svg" alt="get to know me" />Get
+              to know me
             </a>
           </div>
         </div>
@@ -135,7 +145,7 @@
         </div>
         <div class="grid gap-4 md:grid-cols-3">
           <article
-            class="bg-gradient-to-br from-white/10 to-white/5 p-5 md:p-6 lg:p-10 rounded-wtf shadow-innerlight ring ring-bg"
+            class="bg-gradient-to-br from-white/10 to-white/5 p-5 md:p-6 lg:p-10 rounded-wtf shadow-inner-light ring-1 ring-inset ring-bg"
           >
             <img
               src="./images/shape_1.svg"
@@ -164,7 +174,7 @@
           </article>
 
           <article
-            class="bg-gradient-to-br from-white/10 to-white/5 p-5 md:p-6 lg:p-10 rounded-wtf shadow-innerlight ring ring-bg"
+            class="bg-gradient-to-br from-white/10 to-white/5 p-5 md:p-6 lg:p-10 rounded-wtf shadow-inner-light ring-1 ring-inset ring-bg"
           >
             <img
               src="./images/shape_2.svg"
@@ -192,7 +202,7 @@
           </article>
 
           <article
-            class="bg-gradient-to-br from-white/10 to-white/5 p-5 md:p-6 lg:p-10 rounded-wtf shadow-innerlight ring ring-bg"
+            class="bg-gradient-to-br from-white/10 to-white/5 p-5 md:p-6 lg:p-10 rounded-wtf shadow-inner-light ring-1 ring-inset ring-bg"
           >
             <img
               src="./images/shape_3.svg"
@@ -422,7 +432,7 @@
         <a
           href="mailto:j.kozlowski@mail.com"
           class="bg-accent text-bg flex gap-3 font-bold text-xl py-3.5 px-3.5 md:px-8 items-center rounded-wtfxl flex-wrap mb-10 leading-9 hover:bg-accent-400 hover:ring-accent-400 transition-colors duration-500"
-          ><img src="./images/mail.svg" alt="mail me"/>j.kozlowski@mail.com</a
+          ><img src="./images/mail.svg" alt="mail me" />j.kozlowski@mail.com</a
         >
         <p class="text-2xl text-center text-gray-400 font-medium mb-6">
           or find me on
@@ -432,55 +442,75 @@
         >
           <li>
             <a
-              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
+              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-inner-light-sm ring-1 ring-inset ring-bg"
               href="http://bitbucket.org/"
               target="_blank"
               rel="noreferrer nofollow"
-              ><img class="w-14 h-14" alt="github" src="./images/github_gray.svg" />
+              ><img
+                class="w-14 h-14"
+                alt="github"
+                src="./images/github_gray.svg"
+              />
             </a>
           </li>
           <li>
             <a
-              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
+              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-inner-light-sm ring-1 ring-inset ring-bg"
               href="https://codepen.io/"
               target="_blank"
               rel="noreferrer nofollow"
-              ><img class="w-14 h-14" alt="codepen" src="./images/codepen.svg" />
+              ><img
+                class="w-14 h-14"
+                alt="codepen"
+                src="./images/codepen.svg"
+              />
             </a>
           </li>
           <li>
             <a
-              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
+              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-inner-light-sm ring-1 ring-inset ring-bg"
               href="https://www.linkedin.com/"
               target="_blank"
               rel="noreferrer nofollow"
             >
-              <img class="w-14 h-14" alt="linkedin" src="./images/linkedin.svg" />
+              <img
+                class="w-14 h-14"
+                alt="linkedin"
+                src="./images/linkedin.svg"
+              />
             </a>
           </li>
           <li>
             <a
-              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
+              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-inner-light-sm ring-1 ring-inset ring-bg"
               href="https://www.facebook.com/"
               target="_blank"
               rel="noreferrer nofollow"
             >
-              <img class="w-14 h-14" alt="facebook" src="./images/facebook.svg" />
+              <img
+                class="w-14 h-14"
+                alt="facebook"
+                src="./images/facebook.svg"
+              />
             </a>
           </li>
           <li>
             <a
-              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
+              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-inner-light-sm ring-1 ring-inset ring-bg"
               href="https://www.instagram.com/"
               target="_blank"
               rel="noreferrer nofollow"
             >
-              <img class="w-14 h-14" alt="instagram" src="./images/instagram.svg" />
+              <img
+                class="w-14 h-14"
+                alt="instagram"
+                src="./images/instagram.svg"
+              />
             </a>
           </li>
           <li>
             <a
-              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
+              class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-inner-light-sm ring-1 ring-inset ring-bg"
               href="https://www.twitter.com/"
               target="_blank"
               rel="noreferrer nofollow"

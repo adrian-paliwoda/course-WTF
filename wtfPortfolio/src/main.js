@@ -29,7 +29,7 @@ const createComponent = (
 
   if (homepage) {
     demoContent = ` <a
-          class="md:text-xl bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl hover:border-accent transition-colors duration-500"
+          class="md:text-xl bg-bg text-accent border-gray-800 border-2 flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl hover:border-accent transition-colors duration-500"
           href="${homepage}"
           target="_blank"
           rel="noreferrer nofollow"
@@ -40,10 +40,10 @@ const createComponent = (
 
   let template = `
     <article
-    class="bg-gradient-to-br from-white/10 to-white/5 rounded-wtf md:rounded-wtfxl shadow-innerlight ring ring-bg overflow-clip flex flex-col h-full"
+    class="bg-gradient-to-br from-white/10 to-white/5 rounded-wtf md:rounded-wtfxl shadow-inner-light ring-1 ring-inset ring-bg overflow-clip flex flex-col h-full"
   >
     <div
-      class="border-b border-bg h-11 p-4 bg-gradient-to-br from-white/10 to-white/5 rounded-t-wtf md:rounded-t-wtftlr shadow-innerlight flex flex-row gap-1.5"
+      class="border-b border-bg h-11 p-4 bg-gradient-to-br from-white/10 to-white/5 rounded-t-wtf md:rounded-t-wtftlr shadow-inner-light flex flex-row gap-1.5"
     >
       <spna class="bg-bg w-3 h-3 block rounded-full opacity-50"></spna>
       <spna class="bg-bg w-3 h-3 block rounded-full opacity-50"></spna>
@@ -65,7 +65,7 @@ const createComponent = (
       <div class="flex flex-col md:flex-row gap-4 items-start mt-4 flex-wrap ">
        ${demoContent}
         <a
-          class="md:text-xl bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl hover:border-accent transition-colors duration-500"
+          class="md:text-xl bg-bg text-accent border-gray-800 border-2 flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl hover:border-accent transition-colors duration-500"
           href="${urlToRepo}"
           target="_blank"
           rel="noreferrer noopener nofollow"
@@ -123,3 +123,4 @@ const getProjects = async () => {
 };
 
 getProjects();
+console.log('Hi! Wanna talk - send me a message');

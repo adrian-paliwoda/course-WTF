@@ -4,5 +4,11 @@
 
 @layer base {
 
+html {
+    scroll-behavior: smooth;
+}
+* {
+    scroll-margin-top: 6.5rem;
+}
 
 }
