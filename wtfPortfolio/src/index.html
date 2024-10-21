@@ -6,6 +6,8 @@
     <meta name="description" content="Adrian's Portfolio" />
     <meta property="og:title" content="Portfolio" />
     <meta property="og:type" content="website" />
+    <meta name="og:description" content="Adrian's Portfolio" />
+    <meta name="og:image" content="./images/og.png" />
 
     <title>Portfolio</title>
 
@@ -13,6 +15,7 @@
     <link rel="manifest" href="manifest.json" />
     <script src="./main.js" type="module" defer></script>
 
+    <link rel="icon" href="./images/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,7 +37,7 @@
 
           <div class="flex-col justify-around">
             <p class="text-xl font-bold text-accent">Adrian WTFowicz</p>
-            <p class="text-white opacity-40 uppercase text-xs tracking-wider">
+            <p aria-label="Frontend developer" class=" text-white opacity-40 uppercase text-xs tracking-wider">
               Frontend developer
             </p>
           </div>
@@ -47,7 +50,7 @@
             <li><a href="#projects">Projects</a></li>
             <li class="w-11">
               <a class="flex flex-row justify-center gap-1" href="#" download>
-                <img src="./images/download.svg" />Resume</a
+                <img src="./images/download.svg" alt="resume download"/>Resume</a
               >
             </li>
             <li>
@@ -67,14 +70,16 @@
       >
         <picture>
           <source
-            srcset="./images/profile-foto.png?as=webp&width=416"
+            srcset="./images/profile-foto.png?as=webp&width=832"
             type="image/webp"
           />
           <source
-            srcset="./images/profile-foto.png?as=avif&width=416"
+            srcset="./images/profile-foto.png?as=avif&width=832"
             type="image/avif"
           />
           <img
+            width="416"
+            height="459"
             id="profile-foto"
             src="./images/profile-foto.png"
             alt="photo"
@@ -102,13 +107,13 @@
               class="bg-accent text-bg flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf md:rounded-wtfxl ring-accent hover:bg-accent-400 hover:ring-accent-400 transition-colors duration-500"
               href="#contact"
             >
-              <img src="./images/get_in_touch.svg" />Get in touch
+              <img src="./images/get_in_touch.svg" alt="get in touch" />Get in touch
             </a>
             <a
               class="bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf md:rounded-wtfxl ring-lightGray ring-2 hover:ring-accent-400 transition-all"
               href="#skills"
             >
-              <img src="./images/get_to_know_me.svg" />Get to know me
+              <img src="./images/get_to_know_me.svg" alt="get to know me"/>Get to know me
             </a>
           </div>
         </div>
@@ -254,17 +259,17 @@
             <picture>
               <source
                 media="(max-width:1023px)"
-                srcset="./images/hobby_1.png?as=webp&width=375&height=375"
+                srcset="./images/hobby_1.png?as=webp&width=750&height=750"
                 type="image/webp"
               />
               <source
                 media="(max-width:1023px)"
-                srcset="./images/hobby_1.png?as=avif&width=375&height=375"
+                srcset="./images/hobby_1.png?as=avif&width=750&height=750"
                 type="image/avif"
               />
               <source
                 media="(min-width:1024px)"
-                srcset="./images/hobby_1.png?as=webp&width=316"
+                srcset="./images/hobby_1.png?as=webp&width=632"
                 type="image/webp"
               />
               <source
@@ -291,17 +296,17 @@
             <picture>
               <source
                 media="(max-width:1023px)"
-                srcset="./images/hobby_2.png?as=webp&width=375&height=375"
+                srcset="./images/hobby_2.png?as=webp&width=750&height=750"
                 type="image/webp"
               />
               <source
                 media="(max-width:1023px)"
-                srcset="./images/hobby_2.png?as=avif&width=375&height=375"
+                srcset="./images/hobby_2.png?as=avif&width=750&height=750"
                 type="image/avif"
               />
               <source
                 media="(min-width:1024px)"
-                srcset="./images/hobby_2.png?as=webp&width=316"
+                srcset="./images/hobby_2.png?as=webp&width=632"
                 type="image/webp"
               />
               <source
@@ -328,17 +333,17 @@
             <picture>
               <source
                 media="(max-width:1023px)"
-                srcset="./images/hobby_3.png?as=webp&width=375&height=375"
+                srcset="./images/hobby_3.png?as=webp&width=750&height=750"
                 type="image/webp"
               />
               <source
                 media="(max-width:1023px)"
-                srcset="./images/hobby_3.png?as=avif&width=375&height=375"
+                srcset="./images/hobby_3.png?as=avif&width=750&height=750"
                 type="image/avif"
               />
               <source
                 media="(min-width:1024px)"
-                srcset="./images/hobby_3.png?as=webp&width=316"
+                srcset="./images/hobby_3.png?as=webp&width=632"
                 type="image/webp"
               />
               <source
@@ -373,7 +378,7 @@
               />
               <source
                 media="(min-width:1024px)"
-                srcset="./images/hobby_4.png?as=webp&width=316"
+                srcset="./images/hobby_4.png?as=webp&width=632"
                 type="image/webp"
               />
               <source
@@ -417,7 +422,7 @@
         <a
           href="mailto:j.kozlowski@mail.com"
           class="bg-accent text-bg flex gap-3 font-bold text-xl py-3.5 px-3.5 md:px-8 items-center rounded-wtfxl flex-wrap mb-10 leading-9 hover:bg-accent-400 hover:ring-accent-400 transition-colors duration-500"
-          ><img src="./images/mail.svg" />j.kozlowski@mail.com</a
+          ><img src="./images/mail.svg" alt="mail me"/>j.kozlowski@mail.com</a
         >
         <p class="text-2xl text-center text-gray-400 font-medium mb-6">
           or find me on
@@ -431,7 +436,7 @@
               href="http://bitbucket.org/"
               target="_blank"
               rel="noreferrer nofollow"
-              ><img class="w-14 h-14" src="./images/github_gray.svg" />
+              ><img class="w-14 h-14" alt="github" src="./images/github_gray.svg" />
             </a>
           </li>
           <li>
@@ -440,7 +445,7 @@
               href="https://codepen.io/"
               target="_blank"
               rel="noreferrer nofollow"
-              ><img class="w-14 h-14" src="./images/codepen.svg" />
+              ><img class="w-14 h-14" alt="codepen" src="./images/codepen.svg" />
             </a>
           </li>
           <li>
@@ -450,7 +455,7 @@
               target="_blank"
               rel="noreferrer nofollow"
             >
-              <img class="w-14 h-14" src="./images/linkedin.svg" />
+              <img class="w-14 h-14" alt="linkedin" src="./images/linkedin.svg" />
             </a>
           </li>
           <li>
@@ -460,7 +465,7 @@
               target="_blank"
               rel="noreferrer nofollow"
             >
-              <img class="w-14 h-14" src="./images/facebook.svg" />
+              <img class="w-14 h-14" alt="facebook" src="./images/facebook.svg" />
             </a>
           </li>
           <li>
@@ -470,7 +475,7 @@
               target="_blank"
               rel="noreferrer nofollow"
             >
-              <img class="w-14 h-14" src="./images/instagram.svg" />
+              <img class="w-14 h-14" alt="instagram" src="./images/instagram.svg" />
             </a>
           </li>
           <li>
@@ -480,7 +485,7 @@
               target="_blank"
               rel="noreferrer nofollow"
             >
-              <img class="w-14 h-14" src="./images/twitter.svg" />
+              <img class="w-14 h-14" alt="twitter" src="./images/twitter.svg" />
             </a>
           </li>
         </ul>

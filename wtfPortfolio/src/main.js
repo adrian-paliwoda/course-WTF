@@ -33,7 +33,7 @@ const createComponent = (
           href="${homepage}"
           target="_blank"
           rel="noreferrer nofollow"
-          ><img src="${demoSvg}" class="w-6 h-6" />View
+          ><img src="${demoSvg}" class="w-6 h-6" alt="view demo"/>View
           demo</a
         >`;
   }
@@ -56,7 +56,7 @@ const createComponent = (
         <p
           class="h-6 flex gap-0.5 items-center bg-gray-400/10 py-1 px-2 leading-none font-medium rounded"
         >
-          <img src="${starSvg}" class="" />${stars}
+          <img src="${starSvg}" alt="stars" />${stars}
         </p>
       </header>
       <p class="text-gray-400 text-xl mb-4">${description}</p>
@@ -69,7 +69,7 @@ const createComponent = (
           href="${urlToRepo}"
           target="_blank"
           rel="noreferrer noopener nofollow"
-          ><img src="${githubSvg}" class="w-6 h-6" />Source
+          ><img src="${githubSvg}" class="w-6 h-6" alt="go to source"/>Source
           code</a
         >
       </div>
