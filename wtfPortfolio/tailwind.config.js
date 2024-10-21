@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         bg: "#020916",
-        accent: "#CEFF7E",
+        accent: {DEFAULT: "#CEFF7E", 400: '#C2FC5E'},
         description: '#9CA3AF',
         lightGray: "#1F2937"
       },
@@ -24,6 +24,9 @@ module.exports = {
       boxShadow: {
         'innerlight': 'inset 0 2px 0 0 rgba(255, 255, 255, 0.15)',
         'innerlightmini': 'inset 0 1px 0 0 rgba(255, 255, 255, 0.15)'
+      },
+      animation: {
+        slowSpin: 'spin 16s infinite linear'
       }
     },
   },

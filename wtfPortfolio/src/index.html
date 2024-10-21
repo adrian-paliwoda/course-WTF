@@ -28,9 +28,10 @@
         <div class="flex flex-row gap-4 items-center">
           <img
             src="./images/Near_name.svg"
-            class="w-10 h-10 max-h-10 max-w-10"
+            class="w-10 h-10 max-h-10 max-w-10 animate-slowSpin"
             alt="name-decorator"
           />
+
           <div class="flex-col justify-around">
             <p class="text-xl font-bold text-accent">Adrian WTFowicz</p>
             <p class="text-white opacity-40 uppercase text-xs tracking-wider">
@@ -51,7 +52,7 @@
             </li>
             <li>
               <a
-                class="inline-block bg-accent text-bg rounded-xl py-3.5 px-8"
+                class="inline-block bg-accent text-bg rounded-xl py-3.5 px-8 hover:bg-accent-400 hover:ring-accent-400 transition-colors duration-500"
                 href="#contact"
                 >Contact</a
               >
@@ -64,12 +65,22 @@
         id="about"
         class="mx-auto max-w-wtf mb-20 md:mb-64 md:pt-32 flex flex-col md:flex-row-reverse items-center md:justify-between md:gap-12"
       >
-        <img
-          id="profile-foto"
-          src="./images/profile-foto.png"
-          alt="photo"
-          class="w-full md:w-[26rem] h-auto mb-5 rounded-tr-[8rem]"
-        />
+        <picture>
+          <source
+            srcset="./images/profile-foto.png?as=webp&width=416"
+            type="image/webp"
+          />
+          <source
+            srcset="./images/profile-foto.png?as=avif&width=416"
+            type="image/avif"
+          />
+          <img
+            id="profile-foto"
+            src="./images/profile-foto.png"
+            alt="photo"
+            class="w-full md:w-[26rem] max-w-xs md:max-w-none h-auto mb-5 rounded-tr-[8rem]"
+          />
+        </picture>
         <div class="max-w-3xl">
           <h1
             class="text-2xl md:text-3xl lg:text-5xl font-bold mb-4 md:leading-snug lg:leading-snug"
@@ -88,13 +99,13 @@
           </p>
           <div class="flex flex-col md:flex-row flex-wrap items-start gap-4 mb">
             <a
-              class="bg-accent text-bg flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf md:rounded-wtfxl ring-accent"
+              class="bg-accent text-bg flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf md:rounded-wtfxl ring-accent hover:bg-accent-400 hover:ring-accent-400 transition-colors duration-500"
               href="#contact"
             >
               <img src="./images/get_in_touch.svg" />Get in touch
             </a>
             <a
-              class="bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf md:rounded-wtfxl ring-lightGray"
+              class="bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold text-xl py-2 px-4 md:py-3.5 md:px-6 items-center rounded-wtf md:rounded-wtfxl ring-lightGray ring-2 hover:ring-accent-400 transition-all"
               href="#skills"
             >
               <img src="./images/get_to_know_me.svg" />Get to know me
@@ -219,56 +230,8 @@
         </p>
         <div
           id="projects"
-          class="flex flex-row flex-wrap gap-4 items-center justify-center"
-        >
-          <article
-            class="bg-gradient-to-br from-white/10 to-white/5 rounded-wtf md:rounded-wtfxl shadow-innerlight ring ring-bg overflow-clip"
-          >
-            <div
-              class="border-b border-bg h-11 p-4 bg-gradient-to-br from-white/10 to-white/5 rounded-t-wtf md:rounded-t-wtftlr shadow-innerlight flex flex-row gap-1.5"
-            >
-              <spna class="bg-bg w-3 h-3 block rounded-full opacity-50"></spna>
-              <spna class="bg-bg w-3 h-3 block rounded-full opacity-50"></spna>
-              <spna class="bg-bg w-3 h-3 block rounded-full opacity-50"></spna>
-            </div>
-            <div class="p-5 md:p-6 lg:p-10">
-              <header class="flex flex-row gap-4 items-center mb-4">
-                <h3 class="text-2xl font-bold leading-none">Angular app</h3>
-                <p
-                  class="h-6 flex gap-0.5 items-center bg-gray-400/10 py-1 px-2 leading-none font-medium rounded"
-                >
-                  <img src="./images/star.svg" class="" />3
-                </p>
-              </header>
-              <p class="text-gray-400 text-xl mb-4">Lorem ipsum</p>
-              <ul class="flex gap-2">
-                <li
-                  class="h-6 flex gap-0.5 items-center bg-gray-400/10 py-1 px-2 leading-none rounded text-sm font-bold"
-                >
-                  HTML
-                </li>
-                <li
-                  class="h-6 flex gap-0.5 items-center bg-gray-400/10 py-1 px-2 leading-none rounded text-sm font-bold"
-                >
-                  CSS
-                </li>
-              </ul>
-              <div class="flex flex-col md:flex-row gap-4 items-start mt-4">
-                <a
-                  class="md:text-xl bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl"
-                  href=""
-                  ><img src="./images/view_demo.svg" class="w-6 h-6" />View
-                  demo</a
-                >
-                <a
-                  class="md:text-xl bg-bg text-accent border-lightGray border-2 flex gap-3 font-bold py-4 px-5 items-center rounded-wtf md:rounded-xl"
-                  ><img src="./images/github.svg" class="w-6 h-6" />Source
-                  code</a
-                >
-              </div>
-            </div>
-          </article>
-        </div>
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 items-center justify-center"
+        ></div>
       </section>
 
       <section id="after-hours" class="mx-auto max-w-wtf mb-28 md:mb-64">
@@ -277,19 +240,45 @@
         >
           After hours
         </h2>
-        <p class="text-2xl md:text-4xl md:max-w-3xl font-medium tracking-tight mb-10 md:mb-20">
+        <p
+          class="text-2xl md:text-4xl md:max-w-3xl font-medium tracking-tight mb-10 md:mb-20"
+        >
           Outside of my regular working hours, I delve into an array of
           activities and passions. Here's a glimpse into how I spend my
           after-hours.
         </p>
-        <!-- <div class="flex flex-col md:flex-row flex-wrap gap-14 md:gap-4 md:items-center md:justify-center"> -->
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-16 md:gap-8 lg:gap-4">
+        <div
+          class="grid md:grid-cols-2 lg:grid-cols-4 gap-16 md:gap-8 lg:gap-4"
+        >
           <article>
-            <img
-              src="./images/hobby_1.png"
-              class="mb-6 w-full md:max-w-md"
-              alt="music"
-            />
+            <picture>
+              <source
+                media="(max-width:1023px)"
+                srcset="./images/hobby_1.png?as=webp&width=375&height=375"
+                type="image/webp"
+              />
+              <source
+                media="(max-width:1023px)"
+                srcset="./images/hobby_1.png?as=avif&width=375&height=375"
+                type="image/avif"
+              />
+              <source
+                media="(min-width:1024px)"
+                srcset="./images/hobby_1.png?as=webp&width=316"
+                type="image/webp"
+              />
+              <source
+                media="(min-width:1024px)"
+                srcset="./images/hobby_1.png?as=avif&width=316"
+                type="image/avif"
+              />
+              <img
+                src="./images/hobby_1.png"
+                class="mb-6 w-full md:max-w-md rounded-wtfxl"
+                alt="music"
+              />
+            </picture>
+
             <h3 class="text-2xl font-bold tracking-tight mb-1 md:max-w-md">
               Electronic Music
             </h3>
@@ -299,11 +288,34 @@
             </p>
           </article>
           <article>
-            <img
-              src="./images/hobby_2.png"
-              class="mb-6 w-full md:max-w-md"
-              alt="star wars"
-            />
+            <picture>
+              <source
+                media="(max-width:1023px)"
+                srcset="./images/hobby_2.png?as=webp&width=375&height=375"
+                type="image/webp"
+              />
+              <source
+                media="(max-width:1023px)"
+                srcset="./images/hobby_2.png?as=avif&width=375&height=375"
+                type="image/avif"
+              />
+              <source
+                media="(min-width:1024px)"
+                srcset="./images/hobby_2.png?as=webp&width=316"
+                type="image/webp"
+              />
+              <source
+                media="(min-width:1024px)"
+                srcset="./images/hobby_2.png?as=avif&width=316"
+                type="image/avif"
+              />
+              <img
+                src="./images/hobby_2.png"
+                class="mb-6 w-full md:max-w-md rounded-wtfxl"
+                alt="star wars"
+              />
+            </picture>
+
             <h3 class="text-2xl font-bold tracking-tight mb-1 md:max-w-md">
               Star Wars Universum
             </h3>
@@ -313,11 +325,34 @@
             </p>
           </article>
           <article>
-            <img
-              src="./images/hobby_3.png"
-              class="mb-6 w-full md:max-w-md"
-              alt="video games"
-            />
+            <picture>
+              <source
+                media="(max-width:1023px)"
+                srcset="./images/hobby_3.png?as=webp&width=375&height=375"
+                type="image/webp"
+              />
+              <source
+                media="(max-width:1023px)"
+                srcset="./images/hobby_3.png?as=avif&width=375&height=375"
+                type="image/avif"
+              />
+              <source
+                media="(min-width:1024px)"
+                srcset="./images/hobby_3.png?as=webp&width=316"
+                type="image/webp"
+              />
+              <source
+                media="(min-width:1024px)"
+                srcset="./images/hobby_3.png?as=avif&width=316"
+                type="image/avif"
+              />
+              <img
+                src="./images/hobby_3.png"
+                class="mb-6 w-full md:max-w-md rounded-wtfxl"
+                alt="video games"
+              />
+            </picture>
+
             <h3 class="text-2xl font-bold tracking-tight mb-1">Video Games</h3>
             <p class="text-gray-400 md:max-w-md">
               Lost in virtual realms, I find joy and challenge in the dynamic
@@ -325,11 +360,34 @@
             </p>
           </article>
           <article>
-            <img
-              src="./images/hobby_4.png"
-              class="mb-6 w-full md:max-w-md"
-              alt="gym"
-            />
+            <picture>
+              <source
+                media="(max-width:1023px)"
+                srcset="./images/hobby_4.png?as=webp&width=375&height=316"
+                type="image/webp"
+              />
+              <source
+                media="(max-width:1023px)"
+                srcset="./images/hobby_4.png?as=avif&width=375&height=316"
+                type="image/avif"
+              />
+              <source
+                media="(min-width:1024px)"
+                srcset="./images/hobby_4.png?as=webp&width=316"
+                type="image/webp"
+              />
+              <source
+                media="(min-width:1024px)"
+                srcset="./images/hobby_4.png?as=avif&width=316"
+                type="image/avif"
+              />
+              <img
+                src="./images/hobby_4.png"
+                class="mb-6 w-full md:max-w-md rounded-wtfxl"
+                alt="gym"
+              />
+            </picture>
+
             <h3 class="text-2xl font-bold tracking-tight mb-1 md:max-w-md">
               Strength Training
             </h3>
@@ -350,12 +408,15 @@
         >
           Let's work together
         </h2>
-        <p class="text-lg md:text-2xl text-center md:max-w-3xl font-medium tracking-tight mb-10 md:mb-20">
-          I'm open for new opportunities.<br />If you have one for me we should talk!
+        <p
+          class="text-lg md:text-2xl text-center md:max-w-3xl font-medium tracking-tight mb-10 md:mb-20"
+        >
+          I'm open for new opportunities.<br />If you have one for me we should
+          talk!
         </p>
         <a
           href="mailto:j.kozlowski@mail.com"
-          class="bg-accent text-bg flex gap-3 font-bold text-xl py-3.5 px-3.5 md:px-8 items-center rounded-wtfxl flex-wrap mb-10 leading-9"
+          class="bg-accent text-bg flex gap-3 font-bold text-xl py-3.5 px-3.5 md:px-8 items-center rounded-wtfxl flex-wrap mb-10 leading-9 hover:bg-accent-400 hover:ring-accent-400 transition-colors duration-500"
           ><img src="./images/mail.svg" />j.kozlowski@mail.com</a
         >
         <p class="text-2xl text-center text-gray-400 font-medium mb-6">
@@ -369,7 +430,7 @@
               class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
               href="http://bitbucket.org/"
               target="_blank"
-              rel="noreferrer noopener"
+              rel="noreferrer nofollow"
               ><img class="w-14 h-14" src="./images/github_gray.svg" />
             </a>
           </li>
@@ -378,7 +439,7 @@
               class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
               href="https://codepen.io/"
               target="_blank"
-              rel="noreferrer noopener"
+              rel="noreferrer nofollow"
               ><img class="w-14 h-14" src="./images/codepen.svg" />
             </a>
           </li>
@@ -387,7 +448,7 @@
               class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
               href="https://www.linkedin.com/"
               target="_blank"
-              rel="noreferrer noopener"
+              rel="noreferrer nofollow"
             >
               <img class="w-14 h-14" src="./images/linkedin.svg" />
             </a>
@@ -397,7 +458,7 @@
               class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
               href="https://www.facebook.com/"
               target="_blank"
-              rel="noreferrer noopener"
+              rel="noreferrer nofollow"
             >
               <img class="w-14 h-14" src="./images/facebook.svg" />
             </a>
@@ -407,7 +468,7 @@
               class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
               href="https://www.instagram.com/"
               target="_blank"
-              rel="noreferrer noopener"
+              rel="noreferrer nofollow"
             >
               <img class="w-14 h-14" src="./images/instagram.svg" />
             </a>
@@ -417,7 +478,7 @@
               class="w-14 h-14 bg-gradient-to-br from-white/10 to-white/5 p-5 rounded-full flex items-center justify-center shadow-innerlightmini ring ring-bg"
               href="https://www.twitter.com/"
               target="_blank"
-              rel="noreferrer noopener"
+              rel="noreferrer nofollow"
             >
               <img class="w-14 h-14" src="./images/twitter.svg" />
             </a>
